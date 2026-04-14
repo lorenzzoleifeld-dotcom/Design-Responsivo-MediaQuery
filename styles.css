@@ -14,7 +14,7 @@ body {
 }
 .um {
     border: 3px solid orange;
-    margin-left: 1rem;
+    margin-left: 1.1rem;
     margin-top: 1rem;
     width: 1rem;
     padding: 4rem;
@@ -37,6 +37,9 @@ body {
     background: green;
 }
 .caixa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s ease;
     border-radius: 10px;
 }
@@ -44,32 +47,41 @@ body {
     transform: scale(1.1);
 }
 .caixa:active {
-    transform: scale(0.99);
+    transform: scale(0.98);
 }
 h1 {
+    overflow-x: scroll;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    margin: auto;
     color: white;
     text-align: center;
 }
 section {
-    font-size: 5px;
+    font-size: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 310px) {
     section {
-        font-size: 10px;
+        font-size: 3px;
     }
 }
 #btm {
     border: 2px solid orange;
     margin-top: 6rem;
-    margin-left: 22rem;
+    margin-left: 50%;
     border-radius: 10px;
     padding: 1.3rem;
     background: red;
     color: white;
     transition: 0.7s;
+}
+@media screen and (max-width: 230px) {
+    #btm {
+        margin-left: 30px;
+    }
 }
 #btm:hover {
     background: green;
@@ -77,4 +89,12 @@ section {
 #btm:active {
     transform: scale(0.93);
     
+}
+@media screen and (max-width: 280px) {
+    .caixas {
+        margin-top: 1rem;
+        padding: 5%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
