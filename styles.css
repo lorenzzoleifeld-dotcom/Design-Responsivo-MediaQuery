@@ -61,3 +61,20 @@ section {
         font-size: 10px;
     }
 }
+#btm {
+    border: 2px solid orange;
+    margin-top: 6rem;
+    margin-left: 22rem;
+    border-radius: 10px;
+    padding: 1.3rem;
+    background: red;
+    color: white;
+    transition: 0.7s;
+}
+#btm:hover {
+    background: green;
+}
+#btm:active {
+    transform: scale(0.93);
+    
+}
